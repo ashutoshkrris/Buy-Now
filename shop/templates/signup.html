@@ -1,0 +1,92 @@
+<head>
+  <title>Create an account | Buy Now</title>
+</head>
+{% extends 'base.html' %} {% block content %}
+
+<div class="container">
+  <div class="p-4 m-4">
+    <div class="col-lg-5 mx-auto border rounded pt-4">
+        <h3 style="text-align: center;">Signup </h3><br>
+      <form action="{% url 'signup' %}" method="POST">
+        
+        {% csrf_token %}
+        {% if error %}
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            <span class="sr-only">Close</span>
+          </button>
+          {{error}}
+        </div>
+        {% endif %}
+        <div class="form-group">
+            <input
+              type="text"
+              name="fname"
+              id=""
+              value="{{value.fname}}"
+              class="form-control"
+              placeholder="First Name"
+              aria-describedby="helpId"
+            />
+        </div>
+            <div class="form-group">
+              <input
+                type="text"
+                name="lname"
+                id=""
+                value="{{value.lname}}"
+                class="form-control"
+                placeholder="Last Name"
+                aria-describedby="helpId"
+              />
+            </div>
+              <div class="form-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">+91</div>
+                <input
+                  type="text"
+                  name="phone"
+                  id=""
+                  value="{{value.phone}}"
+                  class="form-control"
+                  placeholder="Phone"
+                  aria-describedby="helpId"
+                />
+              </div>
+            </div>
+        <div class="form-group">
+          <input
+            type="email"
+            name="email"
+            autocomplete="off"
+            id=""
+            value="{{value.email}}"
+            class="form-control"
+            placeholder="Email"
+            aria-describedby="helpId"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            name="password"
+            id=""
+            value="{{value.password}}"
+            class="form-control"
+            placeholder="Password"
+            aria-describedby="helpId"
+          />
+        </div>
+        <div class="form-group">
+            <center><input type="submit" class="btn btn-outline-success px-4" value="Sign Up"></center>
+        </div>
+        <center>Already Registered ? </center>
+                <center><a class="card-link" href="{% url 'login' %}">Login</a></center>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
