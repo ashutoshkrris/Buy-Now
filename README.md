@@ -10,7 +10,7 @@ A shopping site built using Django having features :
 The site is deployed on Heroku and static files like CSS, JS and images are served from Amazon AWS S3 Bucket.
 
 ## Website Link
-View the live demo [here](http://buynw.herokuapp.com/) or srty.me/BuyNow .
+View the live demo [here](http://buynw.herokuapp.com/) or http://srty.me/BuyNow .
 
 ## Open Source
 
