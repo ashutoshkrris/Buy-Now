@@ -9,10 +9,10 @@ class Order(models.Model):
                                 on_delete=models.CASCADE)
     customer = models.ForeignKey(Customer,
                                  on_delete=models.CASCADE)
-    quantity = models.IntegerField(default=1)
-    price = models.IntegerField()
+    quantity = models.PositiveIntegerField(default=1)
+    price = models.PositiveIntegerField()
     address = models.CharField(max_length=200, default='')
-    phone = models.CharField(max_length=50, default='')
+    phone = models.CharField(max_length=13, default='')
     order_id = models.CharField(max_length=50, default='')
     order_date = models.DateField(default=datetime.datetime.today)
     order_status = models.BooleanField(default=False)
