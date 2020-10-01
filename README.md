@@ -1,3 +1,9 @@
+![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+![GitHub stars](https://img.shields.io/github/stars/ashutoshkrris/Buy-Now?style=social)
+![GitHub forks](https://img.shields.io/github/forks/ashutoshkrris/Buy-Now?style=social)
+[![GitHub pull-requests](https://img.shields.io/github/issues-pr/ashutoshkrris/Buy-Now.svg)](https://GitHub.com/ashutoshkrris/Buy-Now/pull/)
+
 # Buy Now
 
 A shopping website built using Django having features :
