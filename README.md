@@ -1,16 +1,16 @@
 # Buy Now
 
-A shopping site built using Django having features :
+A shopping website built using Django having features :
 
 - User Authentication/Authorization
 - Shopping cart
 - Order Status(Pending/Completed)
 - Admin Panel
 
-The site is deployed on Heroku and static files like CSS, JS and images are served from Amazon AWS S3 Bucket.
+The website is deployed on Heroku and static files like CSS, JS and images are served from Amazon AWS S3 Bucket.
 
 ## Website Link
-View the live demo [here](http://buynw.herokuapp.com/) or srty.me/BuyNow .
+View the live demo [here](http://buynw.herokuapp.com/) or http://srty.me/BuyNow .
 
 ## Open Source
 
