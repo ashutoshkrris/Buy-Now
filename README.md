@@ -1,6 +1,6 @@
 # Buy Now
 
-A shopping site built using Django having features :
+A shopping website built using Django having features :
 
 - User Authentication/Authorization
 - Shopping cart
